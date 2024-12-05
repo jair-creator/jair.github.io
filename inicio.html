@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Descubre quién soy</title>
+    <link rel="icon" href="imagenes/vida.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img class="oval" src="imagenes/Yo.jpg" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Mapa Interactivo</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="hobies.html">Hobies</a></li>
+            </ul>
+        </nav>
+        <a href="contacto.html" class="btn"><button>Contacto</button></a>
+    </header>    
+
+    <!-- Sección principal de presentación, con encabezado semántico -->
+    <header class="espacio">
+        <h1>Conoce Mi Vida, Mis Pasatiempos y Contacto Directo</h1>
+        <p>Aquí podrás ver mi vida, hobbies y formas de contactarme.</p>
+    </header>
+
+    <!-- Sección semántica: Proyectos -->
+    <section id="proyectos">
+        <h2>Sobre Mí</h2>
+    
+        <!-- Contenedor div para la descripción -->
+        <div class="proyecto">
+            <h3>Mi inicio</h3>
+            <p>¡Hola! Soy Jair Adriel Pérez Escolástico y nací un 6 de marzo de 2010, así que actualmente tengo 14 años. Soy de esos que crecieron rodeados de amor y caos en casa, ya que vivo con mis padres y, por si fuera poco, con mi hermano menor. Es un poquito travieso, pero en el fondo lo quiero mucho (aunque no siempre lo demuestro). Mi familia es mi soporte y mi lugar seguro, y cada día juntos es una nueva aventura, entre risas, bromas y, por supuesto, peleas de hermanos. Pero, ¿qué sería de la vida sin un poquito de diversión y desorden, verdad?</p>
+    
+            <!-- Imagen y texto responsive -->
+            <div class="mi-imagen">
+                <img src="imagenes/Yop.jpg" alt="Este soy yo" class="responsive-img">
+                <p>Este soy yo, no soy el más famoso ni el alma de la escuela, ni el que arma todos los coros... ¡pero ojo! En el fondo, soy de los que siempre están ahí cuando se necesita.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección semántica: Hobbies -->
+    <section id="hobbies">
+        <h2>Mis Hobbies</h2>
+        <p>Me gusta hacer muchas cosas en mi tiempo libre, como jugar, comer y escuchar musica.</p>
+
+        <!-- Contenedor div para cada hobby -->
+        <div class="hobby">
+            <div class="hobiess">
+                <img src="imagenes/love, peace, and joy.jpg" alt="Hobbies">
+            </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Jair Adriel Pérez E. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menú en la esquina -->
+    <div class="menu-derecha">
+        <!-- Ícono de tres puntos para el menú -->
+        <div class="menu-icono" onclick="toggleMenu()">
+            &#x2022;&#x2022;&#x2022; <!-- Tres puntos -->
+        </div>
+
+        <!-- Menú desplegable -->
+        <div id="menuOpciones" class="menu-opciones">
+            <h2>Disfruta música mientras navegas</h2>
+            <audio controls src="audios/Some Catalan Mysteries.mp3"></audio>
+            <br><br>
+            <a href="https://youtu.be/ii236DxTLSU?si=p4IZhY3woMe2qPEX" target="_blank">👉Enlace a la canción por si quieren el nombre👈</a>
+        </div>
+    </div>
+
+    <!-- JavaScript para mostrar/ocultar el menú -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuOpciones");
+            // Verifica el estilo actual y cambia su visibilidad
+            if (menu.style.display === "block") {
+                menu.style.display = "none";  // Si está visible, lo ocultamos
+            } else {
+                menu.style.display = "block";  // Si está oculto, lo mostramos
+            }
+        }
+    </script>
+
+</body>
+</html>

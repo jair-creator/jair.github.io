@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo - Conoce más sobre mí</title>
+    <link rel="icon" href="imagenes/vida.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="header">
+<h1 class="title">¡Bienvenidos a la aventura del Mapa Interactivo! ¡Explora y diviértete!</h1>
+<h4 class="title">En esta página, ¡pueden explorar el mapa y descubrir todas las otras páginas ocultas! ¡Aventúrense!</h4>
+</header>
+<br>
+<div class="interactivemap">
+    <img src="imagenes/resized_image_1000px_width.webp" usemap="#image-map">
+</div>
+
+<map name="image-map">
+    <area target="" alt="Yo" title="Yo" href="inicio.html" coords="400,269,390,224,298,260,249,264,270,218,375,150,418,141,422,48,503,44,505,141,567,161,634,300,638,374,564,408,523,388,476,418,409,414,354,413,345,373,315,346,328,321,360,298,372,280" shape="poly">
+    <area target="" alt="Cosas Fav." title="Cosas Fav." href="inicio.html" coords="499,404,553,474" shape="rect">
+    <area target="" alt="Cosas Fav." title="Cosas Fav." href="inicio.html" coords="733,390,770,468" shape="rect">
+    <area target="" alt="Cosas Fav." title="Cosas Fav." href="inicio.html" coords="678,467,707,490,685,517,630,524,603,508,589,484,617,462,598,435,601,412,635,406,665,406,713,418,705,449" shape="poly">
+    <area target="" alt="Cosas Fav." title="Cosas Fav." href="inicio.html" coords="286,392,333,470" shape="rect">
+    <area target="" alt="Hobies" title="Hobies" href="hobies.html" coords="280,541,273,496,327,481,346,497,372,488,389,504,428,515,419,527,378,534,358,557,346,532,324,531,301,525" shape="poly">
+    <area target="" alt="Hobies" title="Hobies" href="hobies.html" coords="194,187,209,188,134,392,150,373,181,382,196,396,165,548,116,553,47,532,43,484,83,426,101,368,132,354,122,388" shape="poly">
+    <area target="" alt="Hobies" title="Hobies" href="hobies.html" coords="2,124,168,230" shape="rect">
+    <area target="" alt="Mi Contacto" title="Mi Contacto" href="contacto.html" coords="454,513,495,504,540,533,494,543" shape="poly">
+    <hr>
+</map>
+
+<footer class="footer">
+    <h2>¡Espero que se lo pasen genial explorando la página!</h2>
+</footer>
+
+    <!-- Menú en la esquina -->
+    <div class="menu-derecha">
+        <!-- Ícono de tres puntos para el menú -->
+        <div class="menu-icono" onclick="toggleMenu()">
+            &#x2022;&#x2022;&#x2022; <!-- Tres puntos -->
+        </div>
+
+        <!-- Menú desplegable -->
+        <div id="menuOpciones" class="menu-opciones">
+            <h2>Disfruta música mientras navegas</h2>
+            <audio controls src="audios/Some Catalan Mysteries.mp3"></audio>
+            <br><br>
+            <a href="https://youtu.be/ii236DxTLSU?si=p4IZhY3woMe2qPEX" target="_blank">👉Enlace a la canción por si quieren el nombre👈</a>
+        </div>
+    </div>
+
+    <!-- JavaScript para mostrar/ocultar el menú -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuOpciones");
+            // Verifica el estilo actual y cambia su visibilidad
+            if (menu.style.display === "block") {
+                menu.style.display = "none";  // Si está visible, lo ocultamos
+            } else {
+                menu.style.display = "block";  // Si está oculto, lo mostramos
+            }
+        }
+    </script>
+    
+
+</map>
+</body>
+</html>

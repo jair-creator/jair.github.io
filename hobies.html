@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Hobbies - Cosas que me apasionan</title>
+    <link rel="icon" href="imagenes/vida.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img class="oval" src="imagenes/Yo.jpg" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Mapa Interactivo</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="hobies.html">Hobies</a></li>
+            </ul>
+        </nav>
+        <a href="contacto.html" class="btn"><button>Contacto</button></a>
+    </header>    
+
+    <!-- Sección principal de presentación, con encabezado semántico -->
+    <header class="espacio">
+        <h1>Conoce mis cosas favortitas y mis hobbies</h1>
+        <p>Aquí podrás ver mis hobbies y las cosas que me gustan</p>
+    </header>
+
+    <!-- Sección semántica: Proyectos -->
+    <section id="proyectos">
+        <h2>Hobbies</h2>
+    
+        <!-- Contenedor div para la descripción -->
+        <div class="proyecto">
+            <h3>Mis Hobbies</h3>
+            <p>Mis cosas favoritas que me gusta hacer en mi tiempo libre son comer, jugar y escuchar música.</p>
+            <div class="mi-imagen">
+                <img src="imagenes/love, peace, and joy.jpg" alt="Mis hobbies" class="responsive-img">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección semántica: Hobbies -->
+    <section id="hobbies">
+        <h2>Comer</h2>
+        <p>Me gusta mucho comer de más cuando tengo tiempo libre. Mis comidas favoritas son el sushi, la pizza y las hamburguesas.</p>
+
+        <!-- Contenedor div para cada hobby -->
+        <div class="hobby">
+            <div class="hobiess">
+                <img src="imagenes/comida.webp" alt="Hobbies">
+            </div>
+    </section>
+
+    <!-- Sección semántica: Hobbies -->
+    <section id="hobbies">
+        <h2>Jugar</h2>
+        <p>Me gusta mucho jugar cuando tengo tiempo libre, ya que para mí es una forma de desestresarme de vez en cuando. Mis juegos favoritos son: Mortal Kombat 11, Mortal Kombat X, Gran Turismo 5, Roblox, Horizon Zero Dawn y Fortnite.</p>
+
+        <!-- Contenedor div para cada hobby -->
+        <div class="hobby">
+            <div class="hobiess">
+                <img src="imagenes/Mk11.webp" alt="Hobbies">
+            </div>
+    </section>
+
+    <!-- Sección semántica: Hobbies -->
+    <section id="hobbies">
+        <h2>Escuchar musica</h2>
+        <p>También me gusta mucho escuchar muchos tipos de música en mis tiempos libres. Tengo un gusto muy variado, ya que suelo escuchar de todo, pero hasta ahora mis géneros de música favoritos son: la electrónica, el Brazilian funk, el trap y música en inglés, entre otros.</p>
+
+        <!-- Contenedor div para cada hobby -->
+        <div class="hobby">
+            <div class="hobiess">
+                <img src="imagenes/goodvibes.webp" alt="Hobbies">
+            </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>&copy; 2024 Jair Adriel Pérez E. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menú en la esquina -->
+    <div class="menu-derecha">
+        <!-- Ícono de tres puntos para el menú -->
+        <div class="menu-icono" onclick="toggleMenu()">
+            &#x2022;&#x2022;&#x2022; <!-- Tres puntos -->
+        </div>
+
+        <!-- Menú desplegable -->
+        <div id="menuOpciones" class="menu-opciones">
+            <h2>Disfruta música mientras navegas</h2>
+            <audio controls src="audios/Some Catalan Mysteries.mp3"></audio>
+            <br><br>
+            <a href="https://youtu.be/ii236DxTLSU?si=p4IZhY3woMe2qPEX" target="_blank">👉Enlace a la canción por si quieren el nombre👈</a>
+        </div>
+    </div>
+
+    <!-- JavaScript para mostrar/ocultar el menú -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuOpciones");
+            // Verifica el estilo actual y cambia su visibilidad
+            if (menu.style.display === "block") {
+                menu.style.display = "none";  // Si está visible, lo ocultamos
+            } else {
+                menu.style.display = "block";  // Si está oculto, lo mostramos
+            }
+        }
+    </script>
+
+</body>
+</html>

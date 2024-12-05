@@ -1,0 +1,94 @@
+* {
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: snow;
+   text-align: center;
+   box-sizing: border-box;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title {
+    padding-top: 40px;
+}
+
+.header {
+padding-bottom: 40px;
+}
+
+.interactivemap img {
+    border-radius: 10px;
+    width: 1000px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/Alto.gif)
+}
+
+        /* Estilo para el contenedor del menú en la esquina */
+        .menu-derecha {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Estilo para el ícono de tres puntos */
+        .menu-icono {
+            cursor: pointer;
+            font-size: 20px;
+            color: #333;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-icono:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para el menú desplegable */
+        .menu-opciones {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #151518;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Estilos para los elementos dentro del menú */
+        .menu-opciones h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .menu-opciones a {
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .menu-opciones a:hover {
+            text-decoration: underline;
+        }

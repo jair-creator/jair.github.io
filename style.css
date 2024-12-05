@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.oval{
+    border-radius: 50%;
+    border: 0.1rem solid #fff; 
+}
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85pxs;
+    padding: 5px 10%;
+}
+
+.hobiess {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hobiess img {
+    border-radius: 10px;
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 700px; /* Tamaño máximo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mi-imagen {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mi-imagen img {
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mi-imagen p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.espacio{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+.menu-derecha {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-icono {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-icono:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-opciones {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #151518;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-opciones h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu-opciones a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.menu-opciones a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #2980b9;
+}
+
+.proyecto, .hobby {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.profile-pic {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-icons img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+}
